@@ -1,0 +1,27 @@
+{
+  "name": "codemie-proxy",
+  "version": "1.0.0",
+  "description": "OpenAI & Anthropic-compatible HTTP proxy for the CodeMie API",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "start": "node dist/index.js",
+    "prepare": "tsc"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
